@@ -1,0 +1,125 @@
+<meta charset="utf-8">
+<title>Курс Frontend</title>
+<link rel="icon" type="image/png" sizes="32x32" href="else/lessons/img/favicon/favicon-html.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+<p class="title">Калькулятор на JS</p>
+<div class="list">
+    <a href="https://inderio.com/else/calculator/" target="_blank">Калькулятор</a>
+</div>
+
+<!-- 
+<p class="title">Вивчаємо jquery плагіни</p>
+<div class="list">
+    <a href="https://inderio.com/else/lessons/ajax-jquery.php" target="_blank">Робимо свій код відправки форми</a>
+    <a href="https://jquery.com/" target="_blank">Jquery (офіційний сайт)</a>
+    <a href="https://inderio.com/else/design/?img=denarius__product.jpg" target="_blank">Сторінка з якої будемо верстати галерею</a>
+    <p class="note">
+        <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick (Плагін галереї)</a> <br />
+        <a href="https://sachinchoolur.github.io/lightgallery.js/" target="_blank">Lightgallery (Плагін перегляду фото)</a> <br />
+    </p>
+</div>
+ -->
+
+
+
+
+<style>
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        padding-bottom: 100px;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #3f3fc9;
+    }
+    
+    .list > a,
+    body > a {
+        font-size: 20px;
+        color: blue;
+        padding: 10px 30px;
+        display: block;
+        text-decoration: none;
+    }
+    label {
+        cursor: pointer;
+    }
+    input[type="checkbox"] {
+        margin: 0px 3px 0px 0;
+        position: relative;
+        top: 2px;
+        height: 14px;
+        width: 14px;
+        cursor: pointer;
+    }
+    .title {
+        font-size: 14px;
+        color: #888;
+        margin: 45px 0 5px 30px;
+        font-family: Tahoma;
+        text-transform: uppercase;
+        letter-spacing: .8px;
+    }
+    .active-lesson {
+        /* background-color: #f3f3f3d9; */
+        position: relative;
+    }
+    .active-lesson * {
+        position: relative;
+        z-index: 2;
+    }
+    .active-lesson::before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .1;
+    }
+    .list {
+        padding: 30px 0 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, .18);
+    }
+    .list > a:first-child {
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+    .list > a {
+        font-size: 18px;
+    }
+    .list .note {
+        margin: 0 0 0 55px;
+        font-size: 15px;
+        color: #444;
+        line-height: 1.72;
+        margin-bottom: 22px;
+    }
+    .mt-50 {
+        margin-top: 50px;
+    }
+    .pb-20 {
+        padding-bottom: 20px;
+    }
+    .pb-15 {
+        padding-bottom: 15px;
+    }
+    .pb-10 {
+        padding-bottom: 10px;
+    }
+    .pb-none {
+        padding-bottom: 0;
+    }
+    .bdb-none {
+        border-bottom: none;
+    }
+</style>
